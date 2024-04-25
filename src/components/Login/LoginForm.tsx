@@ -29,9 +29,9 @@ const LoginForm: React.FC = () => (
 		layout='vertical'
 	>
 		<Form.Item<FieldType>
-			label='Email Address'
+			label='Emailni kiriting'
 			name='email'
-			rules={[{ required: true, message: 'Please input your email!' }]}
+			rules={[{ required: true, message: 'Iltimos email kiriting!' }]}
 			style={{ marginBottom: 16 }}
 		>
 			<Input
@@ -42,9 +42,9 @@ const LoginForm: React.FC = () => (
 		</Form.Item>
 
 		<Form.Item<FieldType>
-			label='Password'
+			label='Parolni kiriting'
 			name='password'
-			rules={[{ required: true, message: 'Please input your password!' }]}
+			rules={[{ required: true, message: 'Iltimos parol kiriting!' }]}
 		>
 			<Input.Password
 				autoComplete='current-password'
@@ -59,7 +59,7 @@ const LoginForm: React.FC = () => (
 						whiteSpace: 'nowrap',
 					}}
 				>
-					Remember me
+					Eslab qolish
 				</Checkbox>
 			</Form.Item>
 
@@ -68,7 +68,7 @@ const LoginForm: React.FC = () => (
 					to='/forgot-password'
 					style={{ whiteSpace: 'nowrap', color: '#000' }}
 				>
-					Forgot password?
+					Parolni unitdizmi?
 				</Link>
 			</Form.Item>
 		</Flex>
